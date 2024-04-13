@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ultimate resource about all things film">
+        <meta name="author" content="Londan Duffin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fab Film: Home</title>
+        <link rel="stylesheet" href="fabfilm.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <h1>Fab Film</h1>
+            <p>Explore the rich world of cinema</p>
+        </header>
+
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Historic Film</a></li>
+                <li><a href="hollywood_directors.html">Directors</a></li>
+                <li><a href="cinematography.html">Cinematography</a></li>
+                <li class="active"><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+
+        </nav>
+        <!-- Start of the page main -->
+        <main>
+            <h1>Subrscribe to our Newsletter</h1>
+
+            <form method="get" class="myForm" action="thanks.html">
+
+                <fieldset>
+                <legend>Subscriber Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="email" name="email" required placeholder="abc123@gmail.com"></label>
+                </fieldset>
+        
+                <fieldset>
+                <legend>Subscription Preferences</legend>
+                <label><input type="radio" name="method" value="weekly">Weekly></label>
+                <label><input type="radio" name="method" value="bi-weekly">Bi-Weekly></label>
+                <label><input type="radio" name="method" value="monthly">Monthly></label>
+                <label><input type="radio" name="method" value="Other">Other></label>
+                </fieldset>
+        
+                <fieldset>
+                <legend>Interests</legend>
+                    <label><input type="checkbox" name="american/english film" value="chosen"> American/English</label>
+                    <label><input type="checkbox" name="non-english film" value="chosen"> Non-english</label>
+                    <label><input type="checkbox" name="female director" value="chosen"> Female Director</label>
+                    <label><input type="checkbox" name="bipoc director" value="chosen"> BIPOC/Queer Director</label>
+                    <label><input type="checkbox" name="historic" value="chosen"> Historic Cinema</label>
+                    <label><input type="checkbox" name="box office" value="chosen"> Box Office</label>
+                    <label><input type="checkbox" name="other" value="chosen"> Other</label>
+        
+                    <label>Contact Method
+                    <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                    <option value="other">Other (please indicate specifics in comments)</option>
+                    </select>
+                    </label>
+
+                </fieldset>
+                <label>Comments
+                    <textarea name="comments"></textarea>
+                </label>
+        
+                <input type="submit" value="Subscribe">
+                </form>
+
+        </main>
+        <!-- Start of the page footer -->
+        <footer>
+            <p>&copy; 2024 &bull; Londan Duffin &bull; <a href="mailto:10886525@uvu.edu">Email Us</a></p>
+        </footer>
+    </body>
+</html>
