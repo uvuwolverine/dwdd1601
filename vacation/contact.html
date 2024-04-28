@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="How to travel on a budget">
+        <meta name="author" content="Londan Duffin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Budget Vacations: Home</title>
+        <link rel="stylesheet" href="budgetvacation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=forma-djr-banner:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="127" height="100">
+            <div>
+            <h1>Budget Vacations</h1>
+            <p>Travel planning that fits in your wallet</p>
+        </div>
+        </header>
+
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        <!-- Start of the page main -->
+        <main>
+            <h1>Contact Us / Newsletter</h1>
+            <h2 id="contact">Travel Tips, Flight deals, & more flown straight to your inbox</h2>
+
+            <form method="get" class="myForm" action="thanks.html">
+
+                <fieldset>
+                <legend>Subscriber Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="email" name="email" required placeholder="abc123@gmail.com"></label>
+                </fieldset>
+        
+                <fieldset>
+                <legend>Subscription Preferences</legend>
+                <label><input type="radio" name="method" value="weekly">Weekly></label>
+                <label><input type="radio" name="method" value="bi-weekly">Bi-Weekly></label>
+                <label><input type="radio" name="method" value="monthly">Monthly></label>
+                <label><input type="radio" name="method" value="Other">Other></label>
+                </fieldset>
+        
+                <fieldset>
+                <legend>Interests</legend>
+                    <label><input type="checkbox" name="North America" value="chosen"> North America</label>
+                    <label><input type="checkbox" name="Northern Europe" value="chosen"> Northern Europe</label>
+                    <label><input type="checkbox" name="Southern  Europe" value="chosen"> Southern Europe</label>
+                    <label><input type="checkbox" name="Africa" value="chosen"> Africa</label>
+                    <label><input type="checkbox" name="Asia" value="chosen"> Asia</label>
+                    <label><input type="checkbox" name="Islands" value="chosen"> Islands</label>
+                    <label><input type="checkbox" name="Australia/New Zealand" value="chosen"> Australia/New Zealand</label>
+                    <label><input type="checkbox" name="other" value="chosen"> Other</label>
+        
+                    <label>Contact Method
+                    <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                    <option value="other">Other (please indicate specifics in comments)</option>
+                    </select>
+                    </label>
+
+                </fieldset>
+                <label>Comments
+                    <textarea name="comments"></textarea>
+                </label>
+        
+                <input type="submit" value="Subscribe">
+                </form>
+
+            
+        </main>
+        <!-- Start of the page footer -->
+        <footer>
+            <p>&copy; 2024 &bull; Londan Duffin &bull; <a href="mailto:10886525@uvu.edu">Email Us</a></p>
+        </footer>
+    </body>
+</html>

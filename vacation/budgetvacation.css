@@ -1,0 +1,260 @@
+/* prevent problems with different browers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: 'forma-djr-banner', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    font-size: 16px;
+
+}
+
+/* Header Stuff Here*/
+header {
+background-color: white;
+padding: 1rem 2%;
+display: flex;
+align-items: flex-end;
+}
+header div {
+    padding-left: 3vw;
+}
+header h1 {
+margin: 0;
+color: #2f3133;
+}
+header p {
+margin: 0;
+color: #9dbeb7;
+letter-spacing: .5px;
+}
+
+/* Nav stuff goes here*/
+
+/* small screens */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+        nav a {
+            display: block;
+            padding: .8rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: center;
+            border-bottom: solid 1px #aaa;
+            color: #000000;
+    }
+
+        nav .active a {
+            background-color: #2f3133;
+            background-image: linear-gradient(to bottom, #9dbeb7, #6d827d);
+            color: white;
+    }
+    } /*end of media query*/
+
+    /*BIG Screens*/
+    @media only screen and (min-width: 801px) {
+        nav {
+            background-color: #2f3133;
+     }
+            nav ul {
+            list-style-type: none;
+            padding: 0 2vw;
+            margin: 0;
+            display: flex;
+     }
+            nav a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            display: block;
+            padding: .83rem 2rem;
+     }
+            nav li.active a {
+            background-color: #9dbeb7;
+            color: #2f3133;
+     }
+            nav a:hover {
+            color: #fff;
+     }
+    } /* end of media query*/
+
+/* stuff for the main*/
+main {
+padding: 1rem 2vw;
+}
+main h1 {
+color:#9dbeb7;
+}
+main h2 {
+color:#2f3133;
+margin-bottom: .2rem;
+}
+main p {
+color: #2f3133;
+margin: 0 0 .3rem 0;
+}
+main ol{
+padding: .5rem 3vw;
+background-color: rgba(239,230,213,.2);
+}
+
+main address{
+font-style: normal;
+background-color: #efe6d5;
+padding: .5rem;
+width: 12.5rem;
+border: 1px solid  #9dbeb7;
+border-radius: .5rem;
+}
+
+main a {
+color: #9dbeb7;
+}
+
+.durbanhero {
+    width: 100%;
+    margin: 0;   
+}
+
+.durbanhero img {
+    width: 100%;
+    height: auto;
+
+}
+
+main a:hover {
+color: rgb(239,0,24);
+}
+
+/* stuff for Packages page */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    clear: both;
+    display: table;
+  }
+
+  div.column figcaption{
+    text-align: center;
+    font-size: .8rem;
+    color: #9dbeb7;
+  }
+
+/*stuff for the directors page */
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+}
+
+.gallery span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color:#e73213;
+}
+
+.gallery img {
+    width: 98%;
+    height: auto;
+}
+
+.gallery img:hover {
+    box-shadow: 1px 2px 10px rgba(0,0,0,1);
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;   
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #9dbeb7;
+}
+
+
+
+
+/* stuff for the subscription page*/
+
+.myForm fieldset {
+    border: 1px solid #9dbeb7;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #f8faf7;
+    background-color: #9dbeb7;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email]
+{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "forma-", sans-serif;
+    font-weight: 200;
+}
+.myForm textarea {
+    height: 6rem;
+    border: 1px solid #9dbeb7;
+}
+
+.myForm :required {
+    background-color: rgba(239,230,213,0.3);
+}
+
+.myForm [type=submit] {
+    background-color: #9dbeb7;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+
+/* Footer Stuff Here*/
+footer{
+background-color: #efe6d5;
+text-align: center;
+color: #9dbeb7;
+padding: 1rem 0;
+font-size: .8rem;
+}
+footer a{
+color:#9dbeb7;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
